@@ -1,0 +1,21 @@
+Elements en block: 
+Son element que omplen la pagina i que es pot definir les mesures, van uns sobre altres, elemnts estructurals
+    div
+    table
+    p
+    h1
+    h2
+    h3
+    h4
+    h5
+    h6
+    dl
+
+Elements inline:
+No es coloque un a sobre de l'altre, si no, un al costat de l'altre, no es pot cambiar el
+    b
+    s
+    u
+    a
+    i
+    span
