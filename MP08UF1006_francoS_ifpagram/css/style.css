@@ -1,0 +1,219 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+header{
+    height:166px;
+}
+
+
+nav{
+    height:180px;
+}
+
+.cercle{
+    width: 80px;
+    height: 80px;
+    border-radius: 100px;
+    background-color: blue;
+    display:inline-block;
+    margin: 28px;
+    background-image: url(../images/elmo.gif);
+    background-size: 150px;
+    background-repeat: no-repeat;
+    padding: 10px;
+    border: solid 5px white;
+    box-shadow: 0px 0px 7px darkred;
+    opacity:100%;
+    float: left;
+}
+
+.cercle:first-child::after{
+    content: "+";
+    display:block;
+    background-color: darkred;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    color: white;
+    font-size: 32px;
+    border:solid 4px white;
+    position: relative;
+    top:60px;
+    left:60px;
+    
+}
+
+
+article{
+}
+
+
+.contenidor{
+    width:1716px;
+    margin: 0 auto;
+    overflow:hidden;
+    text-align: center;
+    color: black;
+}
+
+
+.entrada{
+    width: 536px;
+    height: 620px;
+    margin: 18px;
+    float: left;
+}
+
+
+image{
+    height: 536px;
+    width: 536px;
+}
+
+
+.reaccions{
+    height: 84px;
+    overflow: hidden;
+    color: white;
+}
+
+.cercle:hover{
+    opacity:80%;
+}
+
+
+/*_________elements article________*/
+
+
+.esquerra{
+    background-color:green;
+    height: 0px;
+    width:50%;
+    float: left;
+    margin:0px;
+
+}
+
+.fotoautor{
+    width: 55px;
+    height: 55px;
+    border-radius: 100px;
+    background-color: blue;
+    margin: 7px;
+    background-image: url(../images/elmo.gif);
+    background-size: 80px;
+    border: solid 5px white;
+    box-shadow: 0px 0px 10px red;
+    float: left;
+}
+
+.autor{
+    width: 210px;
+    height: 40px;
+    line-height: 40px;
+    font-weight: 700;
+    font-size: 22px;
+    color: darkred;
+}
+
+.moment{
+    width: 220px;
+    font-size: 18px;
+    color: lightgrey;
+
+}
+
+
+.dreta{
+    width: 50%;
+    margin: 0;
+    float: right;
+}
+
+.comentari{
+    height: 40px;
+    line-height: 40px;
+    font-weight: 700;
+    font-size: 22px;
+    width: 180px;
+    float:left;
+}
+
+.like{
+    height:30px;
+    width: 30px;
+    float: left;
+    line-height: 40px;
+
+
+}
+
+.mes{
+    height:40px;
+    width: 40px;
+    float: left;
+    line-height:30px;
+    font-size: 700;
+}
+
+
+/* ______header elements_____*/
+
+
+.home{
+    width: 250px;
+    height: 50px;
+    margin: 50px 0 0 28px;
+    background-size: auto;
+    background-image: url(../images/ifpagram_09.jpg);
+    display: inline-block;
+    background-repeat: no-repeat;
+
+}
+
+
+.menu{
+    width: 208px;
+    height: 39px;
+    margin:50px 460px 0 460px;
+    background-color: ;
+    display: inline-block; 
+
+}
+
+    .menu li{
+        width: 32px;
+        height: 32px;
+        background-color: yellow;
+        margin:3px 8px;
+        display: inline-block;
+        background-image: url(../images/ifpagram_11.jpg);
+    }
+
+    .menu .inici{
+        background-position: -22px -58px;
+    }
+
+    .menu .cerca{
+        background-position: -105px -58px;
+    }
+
+    .menu .reel{
+        background-position: -190px -58px;
+    }
+
+    .menu .fav{
+        background-image: url(../images/ifpagram_11.jpg);
+        background-position: -274px -58px;
+    }
+
+
+.perfil{
+    height: 39;
+    width: 208;
+    margin: 50px 0 0 0;
+    display: inline-block;
+}
+

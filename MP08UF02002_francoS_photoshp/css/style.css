@@ -1,0 +1,238 @@
+*{
+    -ms-transform-origin: 0;
+    padding: 0;
+    position: relative;
+}
+
+.logo{
+    height: 200px;
+    width: 200px;
+    background: rgb(24, 31, 70);
+    border-radius: 20px;
+    margin: auto;
+    text-align: center;
+    color: rgb(25, 152, 243);
+    font-size: 140px;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 200px;
+    font-weight: 900;
+}
+
+.fil{
+    width: 150px;
+    height: 200px;
+    margin: 10px;
+    float: left;
+}
+
+.filtres, .fusions{
+    width: 850px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+h1{
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin: 40px 0 0 0;
+    background: rgb(220, 225, 255);
+}
+h2{
+    font-size: 16px;
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.imatge{
+    width: 130px;
+    height: 140px;
+    background-image: url(../img/maduixa.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    margin: auto;
+    background-position: center;
+}
+
+.superposada{
+    width: 130px;
+    height: 140px;
+    background-image: url(../img/pera.png);
+    background-size:  130%;
+    background-repeat: no-repeat;
+    margin: auto;
+    background-position: center;
+}
+
+
+
+/*---------------FILTRES----------------*/
+
+.desenfoc .imatge{
+    filter: blur(2px);
+}
+
+.lluminositat .imatge{
+    filter: brightness(2);
+}
+
+.contrast .imatge{
+    filter: contrast(200%);
+}
+
+.ombra .imatge{
+    filter: drop-shadow(5px 5px 5px green);
+}
+.grisos .imatge{
+    filter: grayscale(80%);
+}
+
+.to-saturacio .imatge{
+    filter: hue-rotate(90deg);
+}
+
+.invertir .imatge{
+    filter: invert(75%);
+}
+
+.opacitat .imatge{
+    filter: opacity(20%);
+}
+
+.saturacio .imatge{
+    filter: saturate(270%);
+}
+
+.sepia .imatge{
+    filter: sepia(100%);
+}
+
+/*---------------FUSIONS----------------*/
+
+
+.multiplicar .superposada{
+    mix-blend-mode: multiply;
+}
+
+.trama .superposada{
+    mix-blend-mode: screen;
+}
+
+.superposar .superposada{
+    mix-blend-mode: overlay;
+}
+
+.enfosquir .superposada{
+    mix-blend-mode:darken;
+}
+
+.aclarar .superposada{
+    mix-blend-mode: lighten;
+}
+
+.fosc .superposada{
+    mix-blend-mode:color-burn;
+}
+
+.clar .superposada{
+    mix-blend-mode: color-dodge;
+}
+
+.intensa .superposada{
+    mix-blend-mode:hard-light;
+}
+
+.suau .superposada{
+    mix-blend-mode: soft-light;
+}
+
+.diferencia .superposada{
+    mix-blend-mode: difference;
+}
+
+.exclusio .superposada{
+    mix-blend-mode: exclusion;
+}
+
+.to .superposada{
+    mix-blend-mode: hue;
+}
+
+.saturacion .superposada{
+    mix-blend-mode: saturation;
+}
+
+.color .superposada{
+    mix-blend-mode: color;
+}
+
+.trama .superposada{
+    mix-blend-mode: luminosity;
+}
+
+/*---------------TIRADOR---------------*/
+
+input{
+    width: 130px;
+    margin: auto;
+}
+
+input[type=range] {
+    -webkit-appearance: none;
+    background: transparent;
+}
+
+input[type=range]::-webkit-slider-thumb{
+    -webkit-appearance: none;
+}
+
+input[type=range]::-webkit-slider-thumb{
+    background: lightcoral;
+    height: 25px;
+    width: 25px;
+    clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+    background: linear-gradient(lightcoral, rgb(148, 130, 238));
+    margin-top: -8px;
+}
+
+
+input[type=range]::-webkit-slider-runnable-track {
+    width: 100%;
+    height: 6px;
+    cursor: pointer;
+    background: rgb(240, 240, 240);
+    border-radius: 4px;
+    box-shadow: inset 1px 1px 1px black;
+}
+
+input[type=checkbox] {
+    -webkit-appearance: none;
+    width: 20px;
+    height: 10px;
+    border:  1px solid black;
+    margin: 0 auto;
+    background: lightgreen;
+    border-radius: 6px;
+}
+
+input[type=checkbox]:before {
+    content: "";
+    display:block;
+    width: 8px;
+    height: 8px;
+    background: white;
+    border-radius: 50%;  
+}
+
+input[type=checkbox]:checked {
+    -webkit-appearance: none;
+    width: 20px;
+    height: 10px;
+    border:  1px solid black;
+    background: pink;
+    margin: 0 auto;
+    border-radius: 6px;  
+}
+
+input[type=checkbox]:checked:before{
+    position: relative;
+    left: 10px;
+}
